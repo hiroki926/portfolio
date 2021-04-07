@@ -1,0 +1,206 @@
+/* 共通 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* ヘッダー */
+
+header {
+  width: 100%;
+  height: 800px;
+}
+
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  padding-top: 80px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide.slide01 {
+  background-image: url("./images/stage2.jpg");
+}
+
+.swiper-slide.slide02 {
+  background-image: url("./images/stage.jpg");
+}
+
+.swiper-button {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;nu
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background: linear-gradient(140deg, black 80%, white 80% 90%, black 90%);
+  z-index: 20;
+}
+
+.menu-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-wrapper .logo {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.menu-wrapper nav,
+.menu-wrapper nav ul,
+.menu-wrapper nav li,
+.menu-wrapper nav a {
+  height: 100%;
+}
+
+.menu-wrapper nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-wrapper nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.menu-wrapper nav a:hover {
+  color: #009e45;
+}
+
+/* メイン */
+
+main {
+  padding: 0 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 2em auto;
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.search-bar button {
+  min-width: 80px;
+}
+
+.search-result {
+  width: 100%;
+  max-width: 1400px;
+  margin: 2em auto;
+  display: flex;
+  overflow: scroll;
+}
+
+.search-result .items {
+  width: 100%;
+  min-width: 500px;
+  height: 400px;
+}
+
+.search-result .items iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* フッター */
+
+footer {
+  height: 60px;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  background: #3f98ef;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
