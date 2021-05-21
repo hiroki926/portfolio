@@ -133,8 +133,17 @@ h1 {
 
 .search-bar button {
   min-width: 80px;
+  
+  background: #5fafff;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 18px;
 }
-
+.search-bar button:hover {
+  background: #efefef;
+  color: #5fafff;
+}
 .search-result {
   width: 100%;
   max-width: 1400px;
