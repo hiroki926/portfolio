@@ -185,6 +185,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2{
