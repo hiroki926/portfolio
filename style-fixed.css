@@ -11,6 +11,9 @@ body {
 }
 
 /* ヘッダー */
+h1{
+  font-family: 'Chela One', cursive;
+ }
 
 header {
   width: 100%;
@@ -78,6 +81,7 @@ header {
   color: white;
   font-size: 1.8rem;
   font-weight: bold;
+  font-family: 'Chela One', cursive;
 }
 
 .menu-wrapper nav,
