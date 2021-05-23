@@ -153,6 +153,7 @@ h1 {
 .search-bar button:hover {
   background: #efefef;
   color: #5fafff;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .search-result {
   width: 100%;
