@@ -19,25 +19,6 @@ h1{
 header {
   width: 100%;
   height: 800px;
-  position: relative;
-}
-.concept {
-  /* ポジション設定 */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  /* 位置の修正 */
-  transform: translate(-50%,-50%);
-
-  /*
-    重なる順番を一番手前に表示
-    スライダー画像の後ろに隠れないようにする
-  */
-  z-index: 1;
-
-  /* この下にデザインを作る */
-
 }
 .swiper-container,
 .swiper-wrapper,
