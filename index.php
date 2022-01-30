@@ -120,38 +120,7 @@
             }
 
         });
-
-      // --- 検索履歴追加 ---
-function addHistory(img, keyword) {
-    // (1) 履歴に検索キーワードが存在するか
-    var exists = $.grep($("#history li"), function(item, index){
-        return ($(item).children(".key").text() == keyword);
-    });
-
-    if (exists.length == 0) {    // (2) 存在しない
-        $("<li/>")
-            .append(img).append("<br/>")
-            .append($("<span/>").addClass("key").append(keyword))
-            .append(
-                $("<a/>").addClass("del").append("[x]")
-                .click(function(){
-                    $(this).parent().remove();
-                    if (searchCond.keyword == keyword) {
-                        $("#videos").empty();
-                        $("#result").empty();
-                    }
-                })
-            )
-            .click(function(){searchHistory({"keyword":keyword, "page":1, "orderby":"relevance"});})
-            .prependTo("#history > ul");
-    } else {    // (3) 存在する
-        $(exists)
-            .prependTo($(exists).parent())
-            .children("img").attr("src", img.attr("src"));
-
-    }
-
-}
+      
         // 発行したAPIKey
         const APIkey = "AIzaSyDSRdpdrBTU4wYh5oLQr5s4G4F3hnGS0-U";
         // 検索結果が表示されるHTMLの要素を取得
